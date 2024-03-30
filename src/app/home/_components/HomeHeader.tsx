@@ -5,12 +5,12 @@ export default function HomeHeader() {
   return (
     <div className="mb-2 w-full px-7 h-11 flex justify-between items-center text-3xl ">
       <div className="font-semibold text-main">logo</div>
-      <div className="">
+      <div className="mt-1">
         <button className="mr-4">
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
+          <FontAwesomeIcon icon={faMagnifyingGlass} size="sm" />
         </button>
         <button>
-          <FontAwesomeIcon icon={faBars} />
+          <FontAwesomeIcon icon={faBars} size="sm" />
         </button>
       </div>
     </div>
