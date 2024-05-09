@@ -1,17 +1,45 @@
+@font-face {
+  font-family: "Pretendard";
+  src: url("/Pretendard-Regular.subset.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("/Pretendard-SemiBold.subset.woff2") format("woff2");
+  font-weight: 600;
+  font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-}
-
 @media (prefers-color-scheme: dark) {
-  :root {
-  }
 }
 
 body {
   display: flex;
   justify-content: center;
   font-size: 14px;
+  color: #545454;
+  padding-bottom: 40px;
+}
+#__next {
+  min-width: 340px;
+  max-width: 390px;
+  padding-top: 56px !important;
+  padding-bottom: 40px;
+  min-height: calc(100dvh - 96px);
+  margin: 0 auto;
+  background-color: var(--gray-8);
+
+  overflow: hidden;
+}
+
+@layer base {
+  html {
+    font-family: "Pretendard", system-ui, sans-serif !important;
+  }
 }
