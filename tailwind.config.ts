@@ -11,11 +11,20 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        slideInFromRight: {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(0)" },
+        },
+      },
+      animation: {
+        slideInFromRight: "slideInFromRight 0.5s ease-out forwards",
+      },
       fontFamily: {
         apple: ['"Pretendard",sans-serif'],
       },
       fontSize: {
-        xxs: "0.714rem",
+        xxs: "0.625rem",
       },
       colors: {
         main: "#FFBB42",

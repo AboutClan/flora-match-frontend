@@ -54,27 +54,27 @@ export default function HomeStoreSlider() {
   ];
 
   return (
-    <div className="ml-7 mt-7 mb-11">
-      <div className="mb-3  flex justify-between items-end pr-7">
-        <div className="font-semibold text-main text-xl">
-          꽃자님! 이런 꽃집은 어떠세요?
+    <div className="mb-11 ">
+      <div className="mb-3  flex items-end justify-between pr-7">
+        <div className="text-xl  font-semibold">
+          꽃자님! 이런 <span className="text-main">꽃집</span>은 어떠세요?
         </div>
-        <button className="text-xs text-gray-3">모두보기</button>
+        <button className="mb-1 text-xs text-gray-3">모두보기</button>
       </div>
       <div className="">
-        <Swiper slidesPerView={3.4} spaceBetween={10}>
+        <Swiper slidesPerView={3.35} spaceBetween={10}>
           {imageTileArr.map((imageTile, index) => (
             <SwiperSlide key={index}>
               <Link href={imageTile.url} className="relative flex flex-col">
                 <div
-                  className="relative rounded-lg overflow-hidden"
-                  style={{ height: "120px" }}
+                  className="relative overflow-hidden rounded-lg"
+                  style={{ height: "120px", width: "100px" }}
                 >
                   <Image src={imageTile.imageUrl} fill={true} alt="eventImg" />
                 </div>
-                <div className="ml-2 mb-2.5 z-10 absolute left-0 bottom-0 text-white">
+                <div className="absolute bottom-0 left-0 z-10 mb-2.5 ml-2 text-white">
                   <div className="font-semibold ">플라워라운지</div>
-                  <div className="text-xxs mt-0.5">
+                  <div className="mt-0.5 text-xxs">
                     <div className="font-semibold">동작구 대표 꽃집!</div>
                     <div>서울시 동작구</div>
                   </div>

@@ -5,16 +5,13 @@ import MainBannerFlowerSvg from "../../../../asset/svg/MainBannerFlowerSvg";
 
 export default function HomeBanner() {
   return (
-    <div
-      className="bg-main px-7 flex items-center justify-between"
-      style={{ height: "144px" }}
-    >
+    <div className="flex items-center justify-between bg-main px-7" style={{ height: "144px" }}>
       <div className="flex flex-col items-start">
-        <div className="text-white text-lg mb-2">
+        <div className="mb-2 text-xl text-white">
           당신만의 <b>꽃 취향</b>을
           <br /> 찾아드립니다!
         </div>
-        <button className="py-1 px-2.5 text-xs text-main bg-white rounded-2xl">
+        <button className="rounded-2xl bg-white px-2.5 py-1 text-xs text-main">
           <span className="mr-1 ">꽃 mbti 검사</span>
           <FontAwesomeIcon icon={faChevronRight} />
         </button>

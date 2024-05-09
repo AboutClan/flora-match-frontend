@@ -1,4 +1,4 @@
-import { faHeart } from "@fortawesome/pro-light-svg-icons";
+import { faHeart } from "@fortawesome/pro-regular-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Image from "next/image";
 
@@ -30,13 +30,16 @@ export default function HomeMainPosts() {
   return (
     <div className="mx-7">
       <div className="mb-5">
-        <div className="text-lg">
-          현명한 선택! 합리적인 구매 <span className="text-main">&apos;꽃히다&apos;</span>
+        <div className="text-base">
+          현명한 선택! 합리적인 구매 &apos;<span className="text-main">꽃히다</span>&apos;
         </div>
-        <div className="text-xl font-semibold">다양한 정보를 지금 바로 확인해보세요!</div>
+        <div className="text-xl font-semibold">
+          <span className="text-main">다양한 정보</span>를 지금 바로{" "}
+          <span className="text-main">확인</span>해보세요!
+        </div>
       </div>
-      <div className="mb-4 flex h-52">
-        <div className="mr-0.5 overflow-hidden rounded-md">
+      <div className="mb-3.5 flex h-52">
+        <div className="mr-1 overflow-hidden rounded-md">
           <Image
             width={242}
             height={208}
@@ -45,7 +48,7 @@ export default function HomeMainPosts() {
           />
         </div>
         <div className="flex flex-1 flex-col">
-          <div className="relative mb-0.5 flex-1 overflow-hidden rounded-md">
+          <div className="relative mb-1 flex-1 overflow-hidden rounded-md">
             <Image
               fill={true}
               sizes="208px"
@@ -81,7 +84,7 @@ export default function HomeMainPosts() {
           <div className="font-semibold">플라워라운지</div>
           <div className="text-xs text-gray-4">4시간 전</div>
         </div>
-        <div className="flex">
+        <div className="flex font-semibold text-gray-4">
           <div className="mr-4">
             <FontAwesomeIcon icon={faHeart} className="mr-1" />
             <span>18</span>

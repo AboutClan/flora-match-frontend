@@ -3,7 +3,10 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 export default function WriteButton() {
   return (
-    <div className="rounded-full h-16 w-16 bg-main flex justify-center items-center text-white">
+    <div
+      className="flex  items-center justify-center rounded-full bg-main text-white"
+      style={{ height: "60px", width: "60px" }}
+    >
       <FontAwesomeIcon icon={faPenToSquare} size="2x" />
     </div>
   );
