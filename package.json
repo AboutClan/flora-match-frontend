@@ -15,22 +15,32 @@
     "@fortawesome/pro-regular-svg-icons": "^6.5.1",
     "@fortawesome/pro-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "eslint-plugin-simple-import-sort": "^12.1.0",
+    "eslint-plugin-tailwindcss": "^3.15.1",
     "next": "14.0.4",
+    "prettier-plugin-tailwindcss": "^0.5.14",
     "react": "^18",
     "react-dom": "^18",
     "react-query": "^3.39.3",
     "recoil": "^0.7.7",
-    "swiper": "^11.1.0"
+    "swiper": "^11.1.0",
+    "typescript": "^5.2.2"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.1",
     "postcss": "^8",
-    "tailwindcss": "^3.3.0",
-    "typescript": "^5"
+    "prettier": "^3.2.5",
+    "tailwindcss": "^3.3.0"
   }
 }

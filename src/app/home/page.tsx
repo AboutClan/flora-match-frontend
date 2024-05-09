@@ -1,4 +1,5 @@
 import WriteButton from "@/components/WriteButton";
+
 import HomeBanner from "./_components/HomeBanner";
 import HomeHeader from "./_components/HomeHeader";
 import HomeMainPosts from "./_components/HomeMainPosts";

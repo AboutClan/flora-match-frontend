@@ -25,18 +25,18 @@ export default function HomeMainPosts() {
       url: "/review",
     },
   ];
+
+  console.log(imageTileArr);
   return (
     <div className="mx-7">
       <div className="mb-5">
         <div className="text-lg">
-          현명한 선택! 합리적인 구매 <span className="text-main">'꽃히다'</span>
+          현명한 선택! 합리적인 구매 <span className="text-main">&apos;꽃히다&apos;</span>
         </div>
-        <div className="font-semibold text-xl">
-          다양한 정보를 지금 바로 확인해보세요!
-        </div>
+        <div className="text-xl font-semibold">다양한 정보를 지금 바로 확인해보세요!</div>
       </div>
-      <div className="flex h-52 mb-4">
-        <div className="mr-0.5 rounded-md overflow-hidden">
+      <div className="mb-4 flex h-52">
+        <div className="mr-0.5 overflow-hidden rounded-md">
           <Image
             width={242}
             height={208}
@@ -44,8 +44,8 @@ export default function HomeMainPosts() {
             alt="image"
           />
         </div>
-        <div className="flex-1 flex flex-col">
-          <div className="relative flex-1 mb-0.5 rounded-md overflow-hidden">
+        <div className="flex flex-1 flex-col">
+          <div className="relative mb-0.5 flex-1 overflow-hidden rounded-md">
             <Image
               fill={true}
               sizes="208px"
@@ -53,23 +53,23 @@ export default function HomeMainPosts() {
               alt="image"
             />
           </div>
-          <div className="relative flex-1 rounded-md overflow-hidden">
+          <div className="relative flex-1 overflow-hidden rounded-md">
             <Image
               fill={true}
               sizes="208px"
               src="https://studyabout.s3.ap-northeast-2.amazonaws.com/%EC%B9%B4%ED%8E%98+%EB%A9%94%EC%9D%B8+%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%88%98%EC%9B%90/%EC%B9%B4%ED%83%88%EB%A1%9C%EA%B7%B8.webp"
               alt="image"
-              className="z-10 absolute"
+              className="absolute z-10"
             />
-            <div className="text-white flex justify-center items-center absolute h-full z-10 left-0 w-full opacity-50 bg-gray-5"></div>
-            <div className="font-semibold text-xl text-white flex justify-center items-center absolute h-full z-20 left-0 w-full ">
+            <div className="absolute left-0 z-10 flex h-full w-full items-center justify-center bg-gray-5 text-white opacity-50"></div>
+            <div className="absolute left-0 z-20 flex h-full w-full items-center justify-center text-xl font-semibold text-white ">
               +3
             </div>
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-end">
-        <div className="rounded-full overflow-hidden mr-1">
+      <div className="flex items-end justify-between">
+        <div className="mr-1 overflow-hidden rounded-full">
           <Image
             src="https://studyabout.s3.ap-northeast-2.amazonaws.com/%EC%B9%B4%ED%8E%98+%EB%A9%94%EC%9D%B8+%EC%9D%B4%EB%AF%B8%EC%A7%80/%EC%88%98%EC%9B%90/%EC%B9%B4%ED%83%88%EB%A1%9C%EA%B7%B8.webp"
             width={36}
@@ -79,7 +79,7 @@ export default function HomeMainPosts() {
         </div>
         <div className="flex-1">
           <div className="font-semibold">플라워라운지</div>
-          <div className="text-gray-4 text-xs">4시간 전</div>
+          <div className="text-xs text-gray-4">4시간 전</div>
         </div>
         <div className="flex">
           <div className="mr-4">

@@ -1,5 +1,6 @@
 import { faChevronRight } from "@fortawesome/pro-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import MainBannerFlowerSvg from "../../../../asset/svg/MainBannerFlowerSvg";
 
 export default function HomeBanner() {
